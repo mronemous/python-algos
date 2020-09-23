@@ -25,6 +25,7 @@ class TreeNode:
 
         return result + "]"
 
+
 @dataclass
 class Tree:
     root: TreeNode
@@ -123,6 +124,7 @@ class Tree:
     """
     Breadth first traverses
     """
+
     def traverse_levelorder(self, root: TreeNode) -> [str]:
         result = []
         if root is None:
@@ -155,7 +157,7 @@ class Tree:
             if n.left:
                 queue.append(n.left)
 
-        #could also append to a stack to provide this reversed output
+        # could also append to a stack to provide this reversed output
 
         return result[::-1]
 
@@ -214,6 +216,3 @@ class Tree:
             result += self.size(root.right)
 
         return result
-
-
-

@@ -51,8 +51,6 @@ class SearchTree:
         elif data > root.data:
             if root.right:
                 found = self.search(root.right, data)
-        else:
-            found = root
 
         return found
 
@@ -98,16 +96,3 @@ class SearchTree:
                 is_right_valid = False
 
         return is_left_valid and is_right_valid
-
-
-
-
-
-
-
-
-
-
-
-
-

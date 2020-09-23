@@ -1,6 +1,6 @@
 def find_bad_version(versions: [int], is_bad_version):
     l: int = 0
-    r: int = len(versions)-1
+    r: int = len(versions) - 1
     bad: int = -1
 
     while l < r:
@@ -12,6 +12,3 @@ def find_bad_version(versions: [int], is_bad_version):
             l = mid + 1
 
     return l
-
-
-

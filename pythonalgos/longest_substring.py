@@ -21,4 +21,3 @@ def length_of_longest_substring(s: str):
     #     last_index[value] = j + 1
 
     return length
-
